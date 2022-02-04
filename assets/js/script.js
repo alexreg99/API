@@ -141,9 +141,7 @@ var taskStatusChangeHandler = function (event) {
   // find task list item based on event.target's data-task-id attribute
   var taskId = event.target.getAttribute("data-task-id");
 
-  var taskSelected = document.querySelector(
-    ".task-item[data-task-id='" + taskId + "']"
-  );
+  var taskSelected = document.querySelector(".task-item[data-task-id='" + taskId + "']");
 
   // convert value to lower case
   var statusValue = event.target.value.toLowerCase();
